@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主评估界面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res/com.safety.free"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+    <!-- 评估项列表 -->
+
+        <com.safety.free.view.DragSortListView
+            android:id="@id/listview_assess_title"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            style="@style/safety_third_title_listview_style"
+            android:listSelector="@drawable/list_arrow_activated_holo" 
+        	android:background="@drawable/widget_bg"
+            dslv:collapsed_height="2dp"
+            dslv:drag_enabled="true"
+            dslv:drag_scroll_start="0.33"
+            dslv:float_alpha="0.6"
+            dslv:max_drag_scroll_speed="0.5"
+            dslv:slide_shuffle_speed="0.3"
+            dslv:track_drag_sort="false"
+            dslv:use_default_controller="false" 
+            />
+        
+       <!--  <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"/> -->
+
+</RelativeLayout>

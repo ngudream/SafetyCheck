@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- listview的宽高如果不设置为match_parent，getview会调用很多次，系统特性？bug? -->
+    <ListView
+        android:id="@id/listview_vp_content"
+        style="@style/safety_viewpager_content_style"
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp" 
+        android:layout_marginRight="30dp"
+        android:scrollbars="none"/>
+
+    <RelativeLayout
+        android:id="@id/layout_regular_content_load_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:visibility="invisible" >
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            style="@android:style/Widget.ProgressBar.Inverse"
+            />
+    </RelativeLayout>
+    
+    <LinearLayout android:id="@id/layout_regular_content_process"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/regular_content_statistic_process_corner"
+        android:visibility="gone"
+        >
+        
+        <Button
+        android:id="@id/btn_vp_content_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/regular_commit" 
+        android:textSize="12sp"
+        android:background="@drawable/selector_regular_statistic_process"
+        android:visibility="gone"/>
+        
+        <Button
+        android:id="@id/btn_vp_content_statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/regular_statistics" 
+        android:textSize="12sp"
+        android:background="@drawable/selector_regular_statistic_process"
+        android:visibility="gone"/>
+        
+    </LinearLayout>
+    
+    <ImageView android:id="@id/iv_regular_content_process_box"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/box_closed"
+        android:visibility="visible"
+       />
+
+    <LinearLayout
+        android:id="@id/layout_vp_content_statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:layout_below= "@id/iv_regular_content_process_box"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@id/tv_category_fraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/safety_black"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <!-- 显示柱状图 -->
+
+    <LinearLayout
+        android:id="@id/layout_vp_content_statistics_bar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_vp_content_statistics"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentRight="true"
+        android:background="#00000000"
+        android:gravity="center"
+        android:visibility="gone" />
+    
+    <RelativeLayout
+        android:id="@id/layout_statistic_regular_load_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:visibility="invisible" >
+
+        <ProgressBar
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="80dp"
+        	android:layout_below="@id/layout_vp_content_statistics"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@android:style/Widget.ProgressBar.Inverse"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/tv_remain_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/safety_black"
+        android:textSize="18dp" />
+
+</RelativeLayout>

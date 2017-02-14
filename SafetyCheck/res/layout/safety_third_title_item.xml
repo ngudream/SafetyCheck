@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 第三级菜单的listview的item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/layout_assess_title"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:background="@drawable/list_read_holo"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="32dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-8dp" 
+        android:layout_marginLeft="2dp">
+
+        <ImageView
+            android:id="@id/iv_third_title_icon"
+            android:layout_width="32dp"
+            android:layout_height="40dp"
+            android:src="@drawable/safety_third_title_item_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/tv_third_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="@string/fire_safety_check_system"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:textColor="@color/safety_third_title_color" />
+
+    <RelativeLayout
+        android:id="@id/layout_third_title_setting"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp" >
+
+        <TextView
+            android:id="@id/tv_third_title_setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/note_list_green" />
+    </RelativeLayout>
+
+</LinearLayout>

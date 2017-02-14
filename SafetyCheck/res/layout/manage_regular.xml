@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res/com.safety.free"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="540dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/manage_regular_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_manage_regular_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_topbar" >
+
+            <TextView
+                android:id="@id/tv_manage_regular_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="title"
+                android:textColor="@color/safety_black"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/tv_manage_regular_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/safety_manage_regular_no_data"
+            android:textColor="@color/safety_black"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_manage_regular_title"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <com.safety.free.view.DragSortListView
+                android:id="@id/listview_manage_regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@null"
+                android:divider="@null"
+                android:fastScrollEnabled="true"
+                android:paddingLeft="100dp"
+                android:paddingRight="60dp"
+                android:scrollbars="none"
+                dslv:collapsed_height="2dp"
+                dslv:drag_enabled="true"
+                dslv:drag_handle_id="@id/layout_manage_regular_left"
+                dslv:drag_scroll_start="0.33"
+                dslv:drag_start_mode="onDown"
+                dslv:fling_handle_id="@id/layout_manage_regular_middle"
+                dslv:float_alpha="0.6"
+                dslv:max_drag_scroll_speed="0.5"
+                dslv:remove_enabled="true"
+                dslv:remove_mode="flingRemove"
+                dslv:slide_shuffle_speed="0.3"
+                dslv:sort_enabled="false"
+                dslv:track_drag_sort="false"
+                dslv:use_default_controller="true" />
+        </RelativeLayout>
+        
+        <ImageView
+            android:id="@id/iv_manage_regular_process_box"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/manage_menu_box_close"
+            />
+
+        <LinearLayout
+            android:id="@id/layout_manage_regular_bottom_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="42dp"
+            android:layout_marginBottom="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/layout_manage_regular_back"
+                style="@style/TabItem_Layout"
+                android:background="@drawable/bg_tb_item_center" >
+
+                <TextView
+                    android:id="@id/tv_manage_regular_back_label"
+                    style="@style/Style.TabItem.Label"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/lib_back"
+                    android:gravity="center_horizontal"
+                    android:text="@string/back" />
+
+                <TextView
+                    android:id="@id/tab_item_tv_badge_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@id/tv_manage_regular_back_label"
+                    android:layout_marginRight="-14.0dip"
+                    android:layout_marginTop="1.0dip"
+                    android:background="@drawable/bg_msgtip_normal"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="1"
+                    android:minWidth="20.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_manage_regular_clear"
+                style="@style/TabItem_Layout"
+                android:background="@drawable/bg_tb_item_center" >
+
+                <TextView
+                    android:id="@id/tv_manage_regular_clear_label"
+                    style="@style/Style.TabItem.Label"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/btn_delete"
+                    android:gravity="center_horizontal"
+                    android:text="@string/delete" />
+
+                <TextView
+                    android:id="@id/tab_item_tv_badge_regular_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@id/tv_manage_regular_clear_label"
+                    android:layout_marginRight="-14.0dip"
+                    android:layout_marginTop="1.0dip"
+                    android:background="@drawable/bg_msgtip_normal"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="1"
+                    android:minWidth="20.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_manage_regular_recovery"
+                style="@style/TabItem_Layout"
+                android:background="@drawable/bg_tb_item_center" >
+
+                <TextView
+                    android:id="@id/tv_manage_regular_label"
+                    style="@style/Style.TabItem.Label"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/shop_recommend_bg"
+                    android:gravity="center_horizontal"
+                    android:text="@string/recovery" />
+
+                <TextView
+                    android:id="@id/tab_item_tv_badge_regular_recovery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@id/tv_manage_regular_label"
+                    android:layout_marginRight="-14.0dip"
+                    android:layout_marginTop="1.0dip"
+                    android:background="@drawable/bg_msgtip_normal"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="1"
+                    android:minWidth="20.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/layout_delete_all_regular_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:visibility="invisible" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

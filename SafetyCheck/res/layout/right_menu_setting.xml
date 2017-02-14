@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="264dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/brown_shelf_background" >
+
+        <LinearLayout
+            android:id="@id/layout_setting_header"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_topbar" />
+
+        <ScrollView
+            android:id="@id/scrollview_setting_content"
+            style="@style/Style_Patterns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout_setting_header"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="25.0dip" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Style_Patterns_SectionBar"
+                        android:text="@string/system_state_setting_text" />
+
+                    <include layout="@layout/include_patterns_sectionline" />
+
+                    <RelativeLayout
+                        android:id="@id/setting_layout_online_status"
+                        style="@style/Style_Patterns_Content_Clickable" >
+
+                        <TextView
+                            style="@style/Patterns_Text_Left"
+                            android:text="my name is ethan" />
+
+                        <ImageView
+                            android:id="@id/online_arrow"
+                            style="@style/Item_Right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_common_arrow" />
+
+                        <TextView
+                            android:id="@id/setting_tv_online_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="3.0dip"
+                            android:layout_toLeftOf="@id/online_arrow"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/font_value"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/include_patterns_divideline" />
+
+                    <RelativeLayout
+                        android:id="@id/setting_layout_msg_notice"
+                        style="@style/Style_Patterns_Content_Clickable" >
+
+                        <TextView
+                            style="@style/Patterns_Text_Left"
+                            android:text="消防状态" />
+
+                        <ImageView
+                            style="@style/Item_Right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_common_arrow" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/include_patterns_divideline" />
+
+                    <RelativeLayout
+                        android:id="@id/setting_layout_hidden_time"
+                        style="@style/Style_Patterns_Content_Clickable" >
+
+                        <TextView
+                            style="@style/Patterns_Text_Left"
+                            android:text="生产状态" />
+
+                        <ImageView
+                            android:id="@id/setting_hidden_time_arrow"
+                            style="@style/Item_Right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_common_arrow" />
+
+                        <TextView
+                            android:id="@id/setting_tv_hidden_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="3.0dip"
+                            android:layout_toLeftOf="@id/setting_hidden_time_arrow"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/font_value"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/include_patterns_divideline" />
+
+                    <RelativeLayout
+                        android:id="@id/setting_layout_location_service"
+                        style="@style/Style_Patterns_Content_Clickable" >
+
+                        <TextView
+                            style="@style/Patterns_Text_Left"
+                            android:text="安全状态" />
+
+                        <ImageView
+                            style="@style/Item_Right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_common_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Style_Patterns_SectionBar"
+                        android:text="账号管理" />
+
+                    <include layout="@layout/include_patterns_sectionline" />
+
+                    <RelativeLayout
+                        android:id="@id/setting_layout_updatepwd"
+                        style="@style/Style_Patterns_Content_Clickable" >
+
+                        <TextView
+                            style="@style/Patterns_Text_Left"
+                            android:text="修改密码" />
+
+                        <ImageView
+                            style="@style/Item_Right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_common_arrow" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/include_patterns_divideline" />
+
+                    <RelativeLayout
+                        android:id="@id/setting_layout_email"
+                        style="@style/Style_Patterns_Content_Clickable" >
+
+                        <TextView
+                            style="@style/Patterns_Text_Left"
+                            android:text="修改邮箱" />
+
+                        <ImageView
+                            style="@style/Item_Right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_common_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/Style_Patterns_SectionBar"
+                        android:text="系统帮助" />
+
+                    <include layout="@layout/include_patterns_sectionline" />
+
+                    <RelativeLayout
+                        android:id="@id/setting_layout_yijian"
+                        style="@style/Style_Patterns_Content_Clickable" >
+
+                        <TextView
+                            style="@style/Patterns_Text_Left"
+                            android:text="@string/system_yijian_text" />
+
+                        <ImageView
+                            style="@style/Item_Right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_common_arrow" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/include_patterns_divideline" />
+
+                    <RelativeLayout
+                        android:id="@id/setting_layout_mark_help"
+                        style="@style/Style_Patterns_Content_Clickable" >
+
+                        <TextView
+                            style="@style/Patterns_Text_Left"
+                            android:text="@string/system_mark_help_text" />
+
+                        <ImageView
+                            style="@style/Item_Right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_common_arrow" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/include_patterns_divideline" />
+
+                    <RelativeLayout
+                        android:id="@id/setting_layout_about"
+                        style="@style/Style_Patterns_Content_Clickable" >
+
+                        <TextView
+                            style="@style/Patterns_Text_Left"
+                            android:text="@string/system_about_text" />
+
+                        <ImageView
+                            style="@style/Item_Right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_common_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@id/layout_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_setting_header"
+            android:background="@drawable/bg_topbar_shadow"
+            android:focusable="false" />
+    </RelativeLayout>
+
+</RelativeLayout>

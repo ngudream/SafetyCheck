@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@id/menu_personal"
+        android:showAsAction="always"
+        android:icon="@drawable/safety_main_action_personal_normal"
+        android:visible="true"
+        />
+
+</menu>

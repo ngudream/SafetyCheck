@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="245dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="left"
+    >
+    
+    <ImageView android:id="@id/iv_system_menu_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:padding="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon"
+        android:scaleType="fitCenter"/>
+    
+    <TextView android:id="@id/tv_system_menu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/safety_black"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:text="@string/fire_safety_check_system"/>
+
+</LinearLayout>

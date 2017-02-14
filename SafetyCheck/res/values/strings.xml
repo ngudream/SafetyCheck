@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">数字xxx</string>
+    <string name="startbutton_text">进入评估系统</string>
+    <string name="menu_settings">Settings</string>
+    <string name="outline">亲爱的用户：女士/先生 您好!</string>
+    <string name="house_safety_check_title">家庭住宅防火检查</string>
+    <string name="fire_safety_check_system">xxx安全系统检查评估管理</string>
+    <string name="safety_my_account">Ethan</string>
+    <string name="safety_right_menu_setting">设置</string>
+    <string name="safety_right_menu_check_finished">已完成评估</string>
+    <string name="safety_right_menu_check_result">评估结果</string>
+    <string name="safety_right_menu_about">关于</string>
+    <string name="safety_manage_category_delete_num">%1个被删除的评估项</string>
+    <string name="safety_manage_category_no_data">此评估下没有评估项</string>
+    <string name="safety_start_book_first_prompt">欢迎进行安全评估，安全让世界更美好。\n请翻开书本进行评估，祝您评估顺利！</string>
+    <string name="safety_start_book_second_prompt">标准使用保险丝， 电路安全有保障。\n\n电炉油炉煤气罐， 正常使用免荒唐。 
+\n\n电容电器莫超标， 科学用电有保障。 
+\n\n电源电线无破损， 漏电保护做主张。 
+\n\n明火暗火卷烟头， 远离易燃人安祥。 
+\n\nxxx事关你我他， 安全系着千万家。 </string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="recovery">恢复</string>
+    <string name="confirm_exit_title">退出程序</string>
+    <string name="confirm_exit_text">退出程序前请保存评估数据，退出？</string>
+    <string name="safety_manage_regular_no_data">此评估项下没有细则</string>
+    <string name="safety_manage_regular_delete_num">%1个被删除的评估细则</string>
+    <string name="back">返回</string>
+    <string name="remain_regular">您还有%1个选项没评估</string>
+    <string name="hide_statistics">隐藏</string>
+    <string name="regular_statistics">统计</string>
+    <string name="regular_commit">提交</string>
+    <string name="fraction_distribute">分数分布</string>
+    <string name="quarter_distribute">季度统计</string>
+    <string name="safety_check_assess_result">xxx安全系统检查评估等级状况</string>
+    <string name="fraction_distribute_statistics">分数分布情况统计</string>
+    <string name="statistic_quarter_text">按季度统计</string>
+    <string name="statistic_fraction_text">按分数统计</string>
+    <string name="category_fraction_text">得分为：%1分</string>
+    <string name="tv_finally_statistic_prompt_text">您还有需要评估的项，无法进行统计</string>
+    <string name="zero_fraction_text">0</string>
+    <string name="one_fraction_text">1</string>
+    <string name="five_fraction_text">5</string>
+    <string name="seven_fraction_text">7</string>
+    <string name="right_menu_search_text">查询</string>
+    <string name="right_menu_chanage_bg_text">换背景</string>
+    <string name="right_menu_clear_all_data_text">清空数据</string>
+    <string name="right_menu_exit_text">退出</string>
+    <string name="right_menu_login_status_text">登录状态</string>
+    <string name="right_menu_night_state">夜间模式</string>
+    <string name="company_overview">单位概况</string>
+    <string name="item_veto">单项否决</string>
+    <string name="range_assessment">范围评定</string>
+    <string name="check_assessment">检测评定</string>
+    <string name="hazard_identification">危险辨识</string>
+    <string name="level_risk"> 风险等级</string>
+    <string name="hidden_report">隐患报告</string>
+    <string name="use_instructions">使用说明</string>
+    <string name="start_button_text">开始评估之旅</string>
+    <string name="system_state_setting_text">状态设置</string>
+    <string name="system_yijian_text">意见反馈</string>
+    <string name="system_mark_help_text">用户帮助</string>
+    <string name="system_about_text">关于数字xxx</string>
+    <string name="system_clear_data_prompt_text">温馨提示：清空数据将无法恢复</string>
+    <string name="right_menu_clear_confirm_text">清空</string>
+    <string name="clear_data_success">成功清空数据!</string>
+    <string name="right_menu_search_finished_text">已评估项</string>
+    <string name="right_menu_search_unfinished_text">未完成项</string>
+    <string name="btn_search_data_result_text">评估结果</string>
+    <string name="tv_search_unfinished_prompt_text">您已完成全部评估</string>
+    <string name="tv_search_unfinished_data_text">您未完成以下评估</string>
+    <string name="tv_search_finished_data_text">您已完成以下评估</string>
+    <string name="tv_search_finished_prompt_text">您未完成任何评估</string>
+
+</resources>

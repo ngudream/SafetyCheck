@@ -1,0 +1,223 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+     <style name="safety_left_menu_listview_style">
+        <item name="android:alwaysDrawnWithCache">true</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:divider">@drawable/menu_divider</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:background">@drawable/bg_action_bar_flight_top</item>
+        <item name="android:listSelector">@drawable/safety_sidebar_row_bg_selected</item>
+    </style>
+    
+     <style name="safety_third_title_listview_style">
+        <item name="android:alwaysDrawnWithCache">true</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+    
+     <style name="safety_viewpager_content_style">
+        <item name="android:alwaysDrawnWithCache">true</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:divider">@null</item>
+        <item name="android:drawSelectorOnTop">false</item>
+    </style>
+    
+     <!-- 定义一个样式，继承android系统的对话框样式 android:style/Theme.Dialog -->
+    <style name="Theme.ManageRegularActivity" parent="android:style/Theme.Dialog">
+ 
+        <!-- manage_regular.xml为我们定义的窗口背景 -->
+     <item name="android:windowBackground">@drawable/manage_regular</item>
+    </style>
+    
+    <!-- <style name="CustomWindowTitleBackground">
+        <item name="android:background">@drawable/s0_frame_tab_nor</item>
+    </style>
+    
+    <style name="CustomWindowTitleTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style> -->
+    
+    <style name="ManagerCategoryActivityTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/category_activity_animation</item>
+    </style>
+    
+    <style name="category_activity_animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/base_slide_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/base_slide_right_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/base_stay_orig</item>
+        <item name="android:activityCloseExitAnimation">@anim/base_slide_right_out</item>
+        <item name="android:taskOpenEnterAnimation">@anim/base_slide_right_in</item>
+        <item name="android:taskOpenExitAnimation">@anim/base_stay_orig</item>
+        <item name="android:taskCloseEnterAnimation">@anim/base_stay_orig</item>
+        <item name="android:taskCloseExitAnimation">@anim/base_slide_right_out</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/base_slide_right_in</item>
+        <item name="android:taskToFrontExitAnimation">@anim/base_stay_orig</item>
+        <item name="android:taskToBackEnterAnimation">@anim/base_stay_orig</item>
+        <item name="android:taskToBackExitAnimation">@anim/base_slide_right_out</item>
+    </style>
+    
+    <style name="ManagerRegularActivityTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/regular_activity_animation</item>
+    </style>
+    
+    <!-- 第一个表示新的activity创建进入效果，第2个表示activity还没有finish()下退出效果，
+    第3个表示上一个activity返回进入效果，第4个表示的是activity finish()之后退出效果...（好似有点乱了） -->
+    <style name="regular_activity_animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/base_slide_up_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/base_slide_bottom_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/base_stay_orig</item>
+        <item name="android:activityCloseExitAnimation">@anim/base_slide_bottom_out</item>
+  </style>
+  
+    <style name="SystemSettingActivityTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/system_setting_activity_animation</item>
+    </style>
+    
+    <style name="system_setting_activity_animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/base_slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/base_slide_right_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/base_stay_orig</item>
+        <item name="android:activityCloseExitAnimation">@anim/base_slide_right_out</item>
+  </style>
+  
+    <style name="ClearDataActivityTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/clear_data_activity_animation</item>
+    </style>
+    
+    <style name="clear_data_activity_animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/biz_news_column_edit_fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/biz_news_column_edit_fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/base_stay_orig</item>
+        <item name="android:activityCloseExitAnimation">@anim/biz_news_column_edit_fade_out</item>
+  </style>
+  
+    <style name="SearchProcessTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/search_process_activity_animation</item>
+    </style>
+    
+    <style name="search_process_activity_animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/base_slide_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/base_slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/base_stay_orig</item>
+        <item name="android:activityCloseExitAnimation">@anim/base_slide_left_out</item>
+  </style>
+  
+    <!-- actionbar上的最左边的样式 -->
+    <style name="ActionLeftTheme" parent="Theme.Sherlock.Light.DarkActionBar">
+        <item name="homeAsUpIndicator">@drawable/new_indicator</item>
+        <item name="android:homeAsUpIndicator">@drawable/new_indicator</item>
+    </style>
+    
+    <style name="SlidingMenu.TextView.Title" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="SlidingMenu.TextView.SubTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/dialog_text_hint</item>
+    </style>
+    <style name="SlidingMenu.TextView.ItemTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/selector_right_menu</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:layout_height">50.0dip</item>
+        <item name="android:drawablePadding">15.0dip</item>
+    </style>
+    <style name="SlidingMenu.View.SplitLine" parent="@android:style/Widget">
+        <item name="android:background">@drawable/sliding_menu_line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Style_Patterns">
+        <item name="android:paddingLeft">@dimen/style_patterns</item>
+        <item name="android:paddingRight">@dimen/style_patterns</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="Style_Patterns_SectionBar">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+        </style>
+        
+    <style name="Style_Patterns_Content">
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50.0dip</item>
+    </style>
+        
+    <style name="Style_Patterns_Content_Clickable" parent="@style/Style_Patterns_Content">
+        <item name="android:background">@drawable/bglistitem_selector</item>
+        <item name="android:clickable">true</item>
+        <item name="android:longClickable">true</item>
+    </style>
+    
+    <style name="Patterns_Text_Left">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/font_attribute</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    
+    <style name="Item_Right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    
+    <style name="TabItem_Layout">
+        <item name="android:background">@drawable/bg_tb_item_center</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">80.0dip</item>
+        <item name="android:layout_height">60.0dip</item>
+    </style>
+    
+    <style name="Style.TabItem.Label" parent="@style/ShadowedText">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textColor">@color/safety_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="ShadowedText">
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+</resources>

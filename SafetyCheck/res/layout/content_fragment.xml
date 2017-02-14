@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主评估界面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <!-- 评估项列表 -->
+
+    <com.safety.free.fragment.AssessTitleView
+        android:id="@id/layout_assess_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <!--
+         <ListView
+        android:id="@id/listview_title"
+        style="@style/safety_third_title_listview_style"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/list_arrow_activated_holo" 
+        android:background="@drawable/widget_bg"/>
+    -->
+
+
+    <!-- viewpager上面的tab -->
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/layout_assess_title_view" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 使tab可以滑动 -->
+
+            <HorizontalScrollView
+                android:id="@id/content_tabs_hori_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@id/viewpager_check_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/safety_viewpager_bg" />
+        </LinearLayout>
+    </TabHost>
+
+    <ProgressBar
+        android:id="@id/content_load_progressbar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

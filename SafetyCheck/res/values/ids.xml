@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <item name="selected_view" type="id"/>
+    <!-- main -->
+    <item type="id" name="main_content">false</item>
+    <item type="id" name="main_outline_fragment">false</item>
+    <item type="id" name="main_content_fragment">false</item>
+    
+    <!-- outline_fragment -->
+    <item type="id" name="sv_outline">false</item>
+    <item type="id" name="tv_outline">false</item>
+    
+    <!-- content_fragment -->
+    <item type="id" name="viewpager_check_content">false</item>
+    <item type="id" name="listview_title">false</item>
+    <item type="id" name="content_load_progressbar">false</item>
+    <item type="id" name="content_tabs_hori_scroll_view">false</item>
+    <item type="id" name="layout_assess_title_view">false</item>
+    
+    <!-- left_menu_frame -->
+    <item type="id" name="menu_left">false</item>
+    
+    <!-- left_menu_list -->
+    <item type="id" name="ep_listview_left_menu">false</item>
+    
+    <!-- right_menu_frame -->
+    <item type="id" name="menu_right">false</item>
+    
+    <!-- left_menu_list_item -->
+    <item type="id" name="menu_icon">false</item>
+    <item type="id" name="menu_title">false</item>
+    <item type="id" name="iv_left_menu_group">false</item>
+    
+    <!-- left_menu_list -->
+    <item type="id" name="menu_list">false</item>
+    
+    <!-- start -->
+    <item type="id" name="tv_start">false</item>
+    <item type="id" name="tv_start_name">false</item>
+    <item type="id" name="tv_startbutton">false</item>
+    <item type="id" name="layout_book_pager">false</item>
+    <item type="id" name="layout_start_progress">false</item>
+    <item type="id" name="progress_start">false</item>
+    
+    <!-- system_preference -->
+    <item type="id" name="iv_system_menu_icon">false</item>
+    <item type="id" name="tv_system_menu_title">false</item>
+    
+    <!-- safety_third_title -->
+    <item type="id" name="layout_assess_title">false</item>
+    <item type="id" name="iv_third_title_icon">false</item>
+    <item type="id" name="tv_third_title">false</item>
+    <item type="id" name="tv_third_title_setting">false</item>
+    <item type="id" name="layout_third_title_setting">false</item>
+    
+    <!-- right_menu -->
+    <item type="id" name="iv_head_image">false</item>
+    <item type="id" name="tv_username">false</item>
+    <item type="id" name="tv_my_account">false</item>
+    <item type="id" name="sv_setting_list">false</item>
+    <item type="id" name="iv_setting_image">false</item>
+    <item type="id" name="tv_setting">false</item>
+    <item type="id" name="iv_check_finished_image">false</item>
+    <item type="id" name="tv_check_finished">false</item>
+    <item type="id" name="iv_check_result_image">false</item>
+    <item type="id" name="tv_check_result">false</item>
+    <item type="id" name="iv_about_image">false</item>
+    
+    <!-- setting -->
+    <item type="id" name="menu_personal">false</item>
+    
+    <!-- regular_content -->
+    <item type="id" name="listview_vp_content">false</item>
+    <item type="id" name="layout_vp_content_statistics">false</item>
+    <item type="id" name="tv_category_fraction">false</item>
+    <item type="id" name="btn_vp_content_statistics">false</item>
+    <item type="id" name="layout_vp_content_statistics_bar">false</item>
+    <item type="id" name="tv_remain_regular">false</item>
+    <item type="id" name="layout_regular_content_load_progress">false</item>
+    <item type="id" name="layout_statistic_regular_load_progress">false</item>
+    <item type="id" name="layout_regular_content_process">false</item>
+    <item type="id" name="btn_vp_content_commit">false</item>
+    <item type="id" name="iv_regular_content_process_box">false</item>
+    
+    <!-- regular_content_item -->
+    <item type="id" name="tv_viewpager_content_index">false</item>
+    <item type="id" name="tv_viewpager_content">false</item>
+    <item type="id" name="rg_viewpager_content_score">false</item>
+    <item type="id" name="rb_viewpager_content_score_zero">false</item>
+    <item type="id" name="rb_viewpager_content_score_one">false</item>
+    <item type="id" name="rb_viewpager_content_score_five">false</item>
+    <item type="id" name="rb_viewpager_content_score_seven">false</item>
+    
+    <!-- manage_category -->
+    <item type="id" name="tv_manage_category_title">false</item>
+    <item type="id" name="listview_manage_category">false</item>
+    <item type="id" name="tv_manage_category_no_data">false</item>
+    <item type="id" name="tv_manage_category_back">false</item>
+    <item type="id" name="layout_delete_all_category_progress">false</item>
+    <item type="id" name="tv_manage_category_back_label">false</item>
+    <item type="id" name="tab_item_tv_badge">false</item>
+    <item type="id" name="tv_manage_category_label">false</item>
+    <item type="id" name="tab_item_tv_badge_recovery">false</item>
+    <item type="id" name="tv_manage_category_clear_label">false</item>
+    <item type="id" name="tab_item_tv_badge_clear">false</item>
+    <item type="id" name="iv_manage_category_process_box">false</item>
+    <item type="id" name="layout_manage_category_bottom_process">false</item>
+    
+    <!-- manage_category_item -->
+    <item type="id" name="layout_manage_category_item">false</item>
+    <item type="id" name="iv_manage_category_icon">false</item>
+    <item type="id" name="tv_manage_category_title">false</item>
+    <item type="id" name="layout_manage_category_left">false</item>
+    <item type="id" name="layout_manage_category_middle">false</item>
+    <item type="id" name="layout_manage_category_right">false</item>
+    <item type="id" name="tv_manage_category_delete_num">false</item>
+    <item type="id" name="layout_manage_category_content">false</item>
+    <item type="id" name="tv_category_setting">false</item>
+    
+    <!-- manage_regular -->
+    <item type="id" name="tv_manage_regular_title">false</item>
+    <item type="id" name="listview_manage_regular">false</item>
+    <item type="id" name="tv_manage_regular_no_data">false</item>
+    <item type="id" name="layout_delete_all_regular_progress">false</item>
+    <item type="id" name="tv_manage_regular_back_label">false</item>
+    <item type="id" name="tab_item_tv_badge_regular">false</item>
+    <item type="id" name="tv_manage_regular_label">false</item>
+    <item type="id" name="tab_item_tv_badge_regular_recovery">false</item>
+    <item type="id" name="tv_manage_regular_clear_label">false</item>
+    <item type="id" name="tab_item_tv_badge_regular_clear">false</item>
+    <item type="id" name="iv_manage_regular_process_box">false</item>
+    <item type="id" name="layout_manage_regular_bottom_process">false</item>
+    
+    <!-- manage_regular_item -->
+    <item type="id" name="iv_manage_regular_icon">false</item>
+    <item type="id" name="tv_manage_regular_title">false</item>
+    <item type="id" name="layout_manage_regular_left">false</item>
+    <item type="id" name="layout_manage_regular_middle">false</item>
+    <item type="id" name="layout_manage_regular_right">false</item>
+    <item type="id" name="tv_manage_regular_delete_num">false</item>
+    <item type="id" name="layout_manage_regular_content">false</item>
+    
+    <!-- regular_content_last -->
+    <item type="id" name="btn_statistic_quarter">false</item>
+    <item type="id" name="btn_statistic_fraction">false</item>
+    <item type="id" name="layout_statistic_bar">false</item>
+    <item type="id" name="tv_finally_statistic_prompt">false</item>
+    <item type="id" name="layout_finally_statistic_prompt">false</item>
+    <item type="id" name="layout_regular_content_last_progress">false</item>
+    <item type="id" name="layout_last_statistic_process">false</item>
+    <item type="id" name="iv_show_last_statistic_process">false</item>
+    <item type="id" name="layout_show_last_statistic_process">false</item>
+    
+    <!-- assess_title_view -->
+    <item type="id" name="listview_assess_title">false</item>
+    
+    <!-- sliding_menu_main -->
+    <item type="id" name="sliding_menu_user_info">false</item>
+    <item type="id" name="sliding_menu_icon_profile">false</item>
+    <item type="id" name="sliding_menu_tv_my_name">false</item>
+    <item type="id" name="sliding_menu_tv_login_status">false</item>
+    <item type="id" name="layout_sliding_menu_tv_setting_icon">false</item>
+    <item type="id" name="sliding_menu_tv_setting">false</item>
+    <item type="id" name="sliding_menu_tv_setting_icon">false</item>
+    <item type="id" name="sliding_menu_tv_search">false</item>
+    <item type="id" name="layout_sliding_menu_tv_search_icon">false</item>
+    <item type="id" name="sliding_menu_tv_search_icon">false</item>
+    <item type="id" name="sliding_menu_tv_change_bg">false</item>
+    <item type="id" name="layout_sliding_menu_tv_change_bg_icon">false</item>
+    <item type="id" name="sliding_menu_tv_change_bg_icon">false</item>
+    <item type="id" name="sliding_menu_tv_night_state">false</item>
+    <item type="id" name="layout_sliding_menu_tv_night_state_icon">false</item>
+    <item type="id" name="sliding_menu_tv_night_state_icon">false</item>
+    <item type="id" name="sliding_menu_tv_exit">false</item>
+    <item type="id" name="layout_sliding_menu_tv_exit_icon">false</item>
+    <item type="id" name="sliding_menu_tv_exit_icon">false</item>
+    <item type="id" name="sliding_menu_tv_clear_data">false</item>
+    <item type="id" name="layout_sliding_menu_tv_clear_data_icon">false</item>
+    <item type="id" name="sliding_menu_tv_clear_data_icon">false</item>
+    <item type="id" name="gv_sliding_menu_other_content">false</item>
+    <item type="id" name="layout_sliding_menu_other_content">false</item>
+    
+    <!-- left_menu_second_title -->
+    <item type="id" name="left_menu_second_hori_scroll_view">false</item>
+    <item type="id" name="tv_left_menu_second_title">false</item>
+    
+    <!-- sliding_menu_gridview_item -->
+    <item type="id" name="tv_gv_item_title">false</item>
+    
+    <!-- system_setting -->
+    <item type="id" name="scrollview_setting_content">false</item>
+    <item type="id" name="layout_setting_header">false</item>
+    <item type="id" name="setting_layout_online_status">false</item>
+    <item type="id" name="online_arrow">false</item>
+    <item type="id" name="setting_tv_online_status">false</item>
+    <item type="id" name="setting_layout_msg_notice">false</item>
+    <item type="id" name="setting_layout_hidden_time">false</item>
+    <item type="id" name="setting_hidden_time_arrow">false</item>
+    <item type="id" name="setting_tv_hidden_time">false</item>
+    <item type="id" name="setting_layout_location_service">false</item>
+    <item type="id" name="setting_layout_updatepwd">false</item>
+    <item type="id" name="setting_layout_email">false</item>
+    <item type="id" name="setting_layout_yijian">false</item>
+    <item type="id" name="setting_layout_mark_help">false</item>
+    <item type="id" name="setting_layout_about">false</item>
+    <item type="id" name="layout_shadow">false</item>
+    
+    <!-- right_menu_clear_view -->
+    <item type="id" name="btn_clear_data_confirm">false</item>
+    <item type="id" name="btn_clear_data_cancel">false</item>
+    <item type="id" name="layout_clear_data_progress">false</item>
+    <item type="id" name="tv_clear_data_prompt">false</item>
+    
+    <!-- right_menu_search_data -->
+    <item type="id" name="iv_image_search">false</item>
+    <item type="id" name="btn_search_data_result">false</item>
+    <item type="id" name="btn_search_data_unfinished">false</item>
+    <item type="id" name="btn_search_data_finished">false</item>
+    <item type="id" name="layout_search_data_process">false</item>
+    
+    <!-- search_unfinished -->
+    <item type="id" name="tv_search_unfinished_data">false</item>
+    <item type="id" name="listview_search_unfinished">false</item>
+    <item type="id" name="layout_search_unfinished_progress">false</item>
+    <item type="id" name="tv_search_unfinished_prompt">false</item>
+    
+    <!-- search_unfinished_item -->
+    <item type="id" name="layout_search_unfinished_content">false</item>
+    <item type="id" name="layout_search_unfinished_left">false</item>
+    <item type="id" name="layout_search_unfinished_middle">false</item>
+    <item type="id" name="layout_search_unfinished_right">false</item>
+    <item type="id" name="tv_search_unfinished_title">false</item>
+    
+    <!-- search_finished -->
+    <item type="id" name="tv_search_finished_data">false</item>
+    <item type="id" name="listview_search_finished">false</item>
+    <item type="id" name="layout_search_finished_progress">false</item>
+    <item type="id" name="tv_search_finished_prompt">false</item>
+    
+    <!-- search_finished_item -->
+    <item type="id" name="layout_search_finished_content">false</item>
+    <item type="id" name="layout_search_finished_left">false</item>
+    <item type="id" name="layout_search_finished_middle">false</item>
+    <item type="id" name="layout_search_finished_right">false</item>
+    <item type="id" name="tv_search_finished_title">false</item>
+    
+    <!-- search_result -->
+    <item type="id" name="btn_search_result_statistic_quarter">false</item>
+    <item type="id" name="btn_search_result_statistic_fraction">false</item>
+    <item type="id" name="layout_search_result_statistic_bar">false</item>
+    <item type="id" name="tv_search_result_finally_statistic_prompt">false</item>
+    <item type="id" name="layout_search_result_finally_statistic_prompt">false</item>
+    <item type="id" name="layout_search_result_progress">false</item>
+    <item type="id" name="layout_search_result_statistic_process">false</item>
+    <item type="id" name="iv_search_result_statistic_process">false</item>
+    <item type="id" name="layout_search_result_statistic_process_line">false</item>
+    <item type="id" name="layout_search_result_statistic_process_btn">false</item>
+</resources>

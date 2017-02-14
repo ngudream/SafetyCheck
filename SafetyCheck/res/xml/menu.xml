@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <Preference
+        android:key="system_pref"
+        android:title="@string/fire_safety_check_system"
+        android:inputType="textCapWords"
+        android:selectable="true"
+        android:layout="@layout/system_preference"
+        />
+
+    <Preference
+        android:key="house_safety_pref"
+        android:title="@string/house_safety_check_title"
+        />
+
+    <!-- <Preference
+        android:key="n"
+        android:title="第N个MENU"
+    /> -->
+
+
+</PreferenceScreen>

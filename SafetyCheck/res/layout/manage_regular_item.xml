@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="390dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="2dp">
+    
+	<TextView android:id="@id/tv_manage_regular_delete_num"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:textSize="15sp"
+	    android:textColor="@color/safety_red"/>
+
+	<LinearLayout android:id="@id/layout_manage_regular_content"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	
+    <RelativeLayout
+        android:id="@id/layout_manage_regular_left"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/safety_regular_delete_background_left" >
+
+        <ImageView
+            android:id="@id/iv_manage_regular_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/safety_manage_regular_item_mark" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/layout_manage_regular_middle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/layout_manage_regular_left" 
+         android:background="@drawable/safety_regular_delete_background_middle">
+
+        <TextView
+            android:id="@id/tv_manage_regular_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/fire_safety_check_system"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/safety_third_title_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/layout_manage_regular_right"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/layout_manage_regular_middle" 
+        android:background="@drawable/safety_regular_delete_background_right" >
+        
+    </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>

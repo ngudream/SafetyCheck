@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res/com.safety.free"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/brown_login_background" >
+
+        <TextView
+            android:id="@id/tv_search_finished_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/tv_search_finished_data_text"
+            android:textColor="@color/safety_black"
+            android:textSize="18sp" 
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@id/tv_search_finished_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/tv_search_finished_prompt_text"
+            android:textColor="@color/safety_black"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_search_finished_data"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <com.safety.free.view.DragSortListView
+                android:id="@id/listview_search_finished"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="82dp"
+                android:cacheColorHint="@null"
+                android:divider="@null"
+                android:fastScrollEnabled="true"
+                android:paddingLeft="82dp"
+                dslv:collapsed_height="2dp"
+                dslv:drag_enabled="true"
+                dslv:drag_handle_id="@id/layout_search_finished_content"
+                dslv:drag_scroll_start="0.33"
+                dslv:drag_start_mode="onDown"
+                dslv:fling_handle_id="@id/layout_search_finished_content"
+                dslv:float_alpha="0.6"
+                dslv:max_drag_scroll_speed="0.5"
+                dslv:slide_shuffle_speed="0.3"
+                dslv:sort_enabled="true"
+                dslv:track_drag_sort="true"
+                dslv:use_default_controller="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/layout_search_finished_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:visibility="invisible" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

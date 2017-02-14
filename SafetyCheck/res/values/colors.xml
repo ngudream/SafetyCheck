@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="safety_menu_list_title_color">#ffffffff</color>
+    <color name="safety_third_title_color">#ff000000</color>
+    <color name="safety_right_menu_bg_color_deep">#E5E5E5</color>
+    <color name="safety_white">#FFFFFF</color>
+    <color name="safety_blue">#0066FF</color>
+    <color name="safety_red">#FF0033</color>
+    <color name="safety_no_color">#00000000</color>
+    <color name="safety_bg_color">#F4F3F3</color>
+    <color name="safety_black">#000000</color>
+    <color name="safety_text_color">#434343</color>
+    <color name="safety_black_half">#50000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="dialog_text_hint">#ffb0b0b0</color>
+    <color name="biz_pc_info_item_color">#ff6b6c6d</color>
+    <color name="background_normal">#fffffbf0</color>
+    <color name="blue">#ff0f81d9</color>
+    <color name="background_normal_press">#ffece7da</color>
+    <color name="font_attribute">#ff000000</color>
+    <color name="font_value">#ff000000</color>
+    <color name="devideline">#ffd0c9b8</color>
+
+</resources>

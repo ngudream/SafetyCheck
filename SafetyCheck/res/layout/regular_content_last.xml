@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- viewpager的最后一页，显示统计 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@id/layout_show_last_statistic_process"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/layout_last_statistic_process"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="-20dp" >
+
+        <ImageView
+            android:id="@id/iv_show_last_statistic_process"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/btn_night_up" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/layout_last_statistic_process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/regular_content_statistic_process_corner"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@id/btn_statistic_quarter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statistic_quarter_text"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@id/btn_statistic_fraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statistic_fraction_text"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/layout_finally_statistic_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@id/tv_finally_statistic_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tv_finally_statistic_prompt_text"
+            android:textColor="@color/safety_black"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <!-- 显示柱状图 -->
+
+    <LinearLayout
+        android:id="@id/layout_statistic_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_last_statistic_process"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@id/layout_regular_content_last_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:visibility="invisible" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>
